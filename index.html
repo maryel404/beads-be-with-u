@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Beads Be with U</title>
+        <link rel="icon" href="images/BU LOGO.png">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/navigation.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <!--Script for Responsive Hamburger-->
+        <script>
+            $(document).ready(function(){
+                $('#icon').click(function(){
+                    $('ul').toggleClass('show');
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="bg-gradient">
+        <section class="header">
+            <nav>
+                <!--Navbar-->
+                    <div class="nav-container">
+                        <div class="logo">
+                            <a href="index.html"><img src="images/logo.png" class="center"></a>
+                        </div>                        
+                        <!--Nav Links-->
+                        <ul class="left-side">
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="about.html" >ABOUT</a></li>
+                            <li><a href="contact.html" >CONTACT</a></li>
+                            <li><a href="order.html">ORDERING PROCESS</a></li>
+                            <li><a href="cart.html" class="right-side"><img src="images/cart-icon.png" style="height: 25px; width: 25px;"></a></li>
+                        </ul>
+                        <!--HAMBURGER-->
+                        <label id="icon">
+                            <i class="fas fa-bars"></i>
+                        </label>
+                    </div>
+            </nav>
+        </section>
+        <!--Slider-->
+        <section class="slide-container">
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <img id="slide-1" class="img-slider" src="images/necklace.jpg"/>
+                    <img id="slide-2" class="img-slider" src="images/bracelet.jpg"/>
+                    <img id="slide-3" class="img-slider" src="images/charms.jpg"/>
+                </div>
+                <div class="slider-nav">
+                    <a href="#slide-1"></a>
+                    <a href="#slide-2"></a>
+                    <a href="#slide-3"></a>
+                </div>
+            </div>
+        </section>
+        <!--Shop Contents-->
+        <section class="row">
+            <div class="column">
+                <a href="bracelets.html"><img src="images/img1.jpg" width="100%" height="100%"></a>
+                <div class="text">BRACELETS</div>
+            </div>
+            <div class="column">
+                <a href="necklaces.html"><img src="images/img2.jpg" width="100%" height="100%"></a>
+                <div class="text">NECKLACES</div>
+            </div>
+            <div class="column">
+                <a href="charms.html"><img src="images/img3.jpg" width="100%" height="100%"></a>
+                <div class="text">CHARMS</div>
+            </div>
+        </section>        <!--Footer-->    
+        <footer>
+            <div class="footerContainer">
+                <div class="socialIcons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+                <div class="footerNav">
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="order.html">ORDERING PROCESS</a></li>
+    
+                    </ul>
+                </div>
+            </div>
+            <div class="footerBottom">
+                <p>COPYRIGHT &copy; 2023 Designed by <span class="designer">Beads Be With U</span></p>
+            </div>
+            </footer>
+        </div>
+
+    </body>
+</html>

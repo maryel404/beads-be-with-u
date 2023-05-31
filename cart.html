@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Your Cart</title>
+        <link rel="icon" href="images/BU LOGO.png">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/cart.css">
+        <link rel="stylesheet" href="styles/navigation.css">
+        <link href= 'https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <!--Script for Responsive Hamburger-->
+        <script>
+            $(document).ready(function(){
+                $('#icon').click(function(){
+                    $('ul').toggleClass('show');
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="bg-gradient">
+        <section class="header">
+            <nav>
+                <!--Navbar-->
+                    <div class="nav-container">
+                        <div class="logo">
+                            <a href="index.html"><img src="images/logo.png" class="center"></a>
+                        </div>                        
+                        <!--Nav Links-->
+                        <ul class="left-side">
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="about.html" >ABOUT</a></li>
+                            <li><a href="contact.html" >CONTACT</a></li>
+                            <li><a href="order.html">ORDERING PROCESS</a></li>
+                            <li><a href="cart.html" class="right-side"><img src="images/cart-icon.png" style="height: 25px; width: 25px;"></a></li>
+                        </ul>
+                        <!--HAMBURGER-->
+                        <label id="icon">
+                            <i class="fas fa-bars"></i>
+                        </label>
+                    </div>
+            </nav>
+        </section>
+        <!--Shopping Cart-->
+        <div class="cart">
+            <h2 class="cart-title">Your Cart</h2>
+            <!--Content-->
+            <div class="cart-content">
+                </div>  
+            </div>
+            <!--Total-->
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">₱</div>
+            </div>
+            <!--Buy and Cancel Button-->
+                <div class="cancelbtn"><button type="button" class="cancel-btn" onclick="window.location.href='bracelets.html'">Cancel</button></div>
+                <div class="buybtn"><button type="button" class="btn-buy">Check Out</button></div>
+        </div>
+        <!--Footer-->
+        <footer>
+            <div class="footerContainer">
+                <div class="socialIcons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+                <div class="footerNav">
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="order.html">ORDERING PROCESS</a></li>
+    
+                    </ul>
+                </div>
+            </div>
+            <div class="footerBottom">
+                <p>COPYRIGHT &copy; 2023 Designed by <span class="designer">Beads Be With U</span></p>
+            </div>
+            </footer>
+        <!--Link to JS-->
+        <script src="js/main.js"></script>
+    </body>
+</html>

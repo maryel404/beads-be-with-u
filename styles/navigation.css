@@ -1,0 +1,370 @@
+.logo img{
+  height: 60px;
+  margin-left: 1rem;
+}
+
+/* NAV BARS */
+.logo{
+  padding-left: 50px;
+}
+.nav-container{
+  display: flex;
+  padding: 15px;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;    
+  position: fixed;
+  background-color: white;
+  z-index: 99;
+  left: 0;
+  right: 0;
+}
+
+.search-me{
+  background-color: aliceblue;
+  margin-top: 10px;
+  border-radius: 0.5rem;
+  padding: 8px 8px;
+  text-align: center;
+  font-size: 15px;
+  float: right;
+}
+
+
+
+/* ARROW BACK */
+
+
+button {
+  margin-top: 110px;
+  position: absolute;
+  border: 0;
+  display: inline-block;
+  width: 12rem;
+  height: 3.5rem;
+  cursor: pointer;
+  outline: none;
+  vertical-align: middle;
+  background: transparent;
+}
+
+
+.circle {
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #B3CEE5;
+  border-radius: 1.625rem;
+  transition: all 0.4s ease-in-out;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+.icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+
+.arrow {
+  transform: translateY(-50%) rotate(-180deg);
+  border-right: none;
+  border-bottom: none;
+  left: 38%;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+  transition: all 0.4s ease-in-out;
+}
+
+.arrow::before {
+  content: "";
+  position: absolute;
+  top: -0.3rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+
+button:hover .arrow {
+  background: #fff;
+  left:30%;
+}
+
+
+/* FOOTER */
+footer{
+  top: 100vh;
+  position: static;
+  background-color: white;
+  flex-shrink: 0;
+}
+.footerContainer{
+  width: 100%;
+  padding:30px 30px 20px;
+}
+.socialIcons{
+  display: flex;
+  justify-content: center;
+}
+.socialIcons a{
+  text-decoration: none;
+  padding: 10px;
+  background-color: rgb(223, 223, 223);
+  margin: 10px;
+  border-radius: 80%;
+}
+.socialIcons a i{
+  font-size: 1.5em;
+  color: black;
+  opacity: 0.9;
+}
+
+/*HOVER EFFECT SOCIAL ICONS*/
+.socialIcons a:hover{
+  background-color: #F7CAC9;
+  transition: 0.5s;
+}
+.socialIcons a:hover i{
+  color:#548dc0;
+  transition: 0.5s;
+}
+
+.footerNav{
+  margin: 30px 0;
+}
+
+.footerNav ul{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.footerNav ul li a{
+  color: black;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.footerNav ul li a:hover{
+  color: #548dc0;
+  opacity: 1;
+}
+.footerBottom{
+  background-color: rgb(223, 223, 223);
+  padding: 20px;
+  text-align: center;
+}
+.footerBottom p{
+  color:black;
+}
+.designer{
+  opacity: 0.8;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+
+/*SCROLL BAR*/
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  background:#B3CEE5;
+}
+::-webkit-scrollbar-thumb{
+  background:#82acd1 ;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #659ccc;
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 767px) {
+  .logo img {
+    height: 40px;
+  }
+
+  .logo {
+    padding-left: 20px;
+  }
+
+  .nav-container {
+    padding: 10px;
+  }
+
+  .search-me {
+    margin-top: 5px;
+    font-size: 12px;
+  }
+
+  button {
+    margin-top: 80px;
+  }
+
+  .circle {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.8rem;
+  }
+
+  .arrow {
+    left: 34%;
+    width: 1rem;
+    height: 0.1rem;
+  }
+
+  .arrow::before {
+    top: -0.2rem;
+    right: 0.05rem;
+    width: 0.4rem;
+    height: 0.4rem;
+    border-top: 0.1rem solid #fff;
+    border-right: 0.1rem solid #fff;
+  }
+
+  .footerContainer {
+    padding: 20px;
+  }
+
+  .socialIcons a {
+    padding: 8px;
+    margin: 5px;
+  }
+
+  .socialIcons a i {
+    font-size: 1.2em;
+  }
+
+  .footerNav ul li a {
+    margin: 10px;
+    font-size: 0.9em;
+  }
+
+  .designer {
+    margin: 0px 3px;
+  }
+}
+
+/* For screens between 768px and 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .logo img {
+    height: 50px;
+  }
+
+  .logo {
+    padding-left: 30px;
+  }
+
+  .nav-container {
+    padding: 12px;
+  }
+
+  .search-me {
+    margin-top: 8px;
+    font-size: 13px;
+  }
+
+  button {
+    margin-top: 100px;
+  }
+
+  .circle {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 1.25rem;
+  }
+
+  .arrow {
+    left: 36%;
+    width: 1.1rem;
+    height: 0.12rem;
+  }
+
+  .arrow::before {
+    top: -0.25rem;
+    right: 0.06rem;
+    width: 0.45rem;
+    height: 0.45rem;
+  }
+
+  .footerContainer {
+    padding: 25px;
+  }
+
+  .socialIcons a {
+    padding: 9px;
+    margin: 7px;
+  }
+
+  .socialIcons a i {
+    font-size: 1.3em;
+  }
+
+  .footerNav ul li a {
+    margin: 15px;
+    font-size: 0.95em;
+  }
+
+  .designer {
+    margin: 0px 4px;
+  }
+}
+
+/* For screens larger than 1023px */
+@media (min-width: 1024px) {
+  .search-me {
+    margin-top: 10px;
+  }
+
+  button {
+    margin-top: 110px;
+  }
+
+  .arrow {
+    left: 38%;
+    width: 1.125rem;
+    height: 0.125rem;
+  }
+
+  .arrow::before {
+    top: -0.3rem;
+    right: 0.0625rem
+
+  }
+}  
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black background */
+  display: none; /* initially hidden */
+}
+
+.overlay.show {
+  display: block;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* your content styling here */
+}
+

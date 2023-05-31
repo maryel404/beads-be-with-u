@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Ordering Process</title>
+        <link rel="icon" href="images/BU LOGO.png">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/about.css">
+        <link rel="stylesheet" href="styles/navigation.css">
+        <link rel="stylesheet" href="styles/order.css">
+        <link href= 'https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <!--Script for Responsive Hamburger-->
+        <script>
+            $(document).ready(function(){
+                $('#icon').click(function(){
+                    $('ul').toggleClass('show');
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="bg-gradient">
+        <section class="header">
+            <nav>
+                <!--Navbar-->
+                    <div class="nav-container">
+                        <div class="logo">
+                            <a href="index.html"><img src="images/logo.png" class="center"></a>
+                        </div>                        
+                        <!--Nav Links-->
+                        <ul class="left-side">
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="about.html" >ABOUT</a></li>
+                            <li><a href="contact.html" >CONTACT</a></li>
+                            <li><a href="order.html">ORDERING PROCESS</a></li>
+                            <li><a href="cart.html" class="right-side"><img src="images/cart-icon.png" style="height: 25px; width: 25px;"></a></li>
+                        </ul>
+                        <!--HAMBURGER-->
+                        <label id="icon">
+                            <i class="fas fa-bars"></i>
+                        </label>
+                    </div>
+            </nav>
+        </section>
+
+        <section class="intro">
+            <h1>ORDERING PROCESS</h1><br>
+        </section>
+        <div class="desc">
+            <p>ORDERING</p><br>
+        </div>
+        <div class="descr">
+            <p>Shop Beads Be With U online by following the instructions below:
+                <br><br>
+                <ul>
+                    •  Browse through the wide selection of bracelets, necklaces, and charms .<br>
+                    •  Click the item you would like to view to read the product information.<br>
+                    •  To purchase, specify the quantity and click the "cart icon" button.<br>
+                    •  Click on your cart to view the items you want to purchase.<br>
+                    •  Finalize your orders and review the total amount before checking out. To proceed with your order, click on the “Check Out” button.<br>
+                    •  Fill out the details necessary as this will be the reference for item delivery. Proceed to payment.
+                </ul>
+            </p>
+        </div>
+        <div class="descr">
+            <h2>PAYMENT OPTIONS</h2><br>
+            <p>We currently accept payments through GCash only.</p>
+        </div>
+        <div class="descr">
+            <h2>SHIPPING</h2><br>
+            <p>ZAMBALES: 5 - 7 Working Days<br>
+                OUTSIDE ZAMBALES: 12 - 15 Working Days</p>
+        </div>
+        <!--Footer-->    
+        <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="order.html">ORDERING PROCESS</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <p>COPYRIGHT &copy; 2023 Designed by <span class="designer">Beads Be With U</span></p>
+        </div>
+        </footer>
+    </body>
+</html>

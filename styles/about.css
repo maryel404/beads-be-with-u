@@ -1,0 +1,18 @@
+/*ABOUT*/
+.intro{
+
+  font-size: larger;
+}
+.desc{
+  margin-left: 30px;
+  padding-top: 50px;
+  font-size: 35px;
+  font-weight: bold;
+}
+.descr{
+  font-size: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 50px;
+
+}

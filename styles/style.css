@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* NAV */
+.bg-gradient {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(#fff, #B3CEE5);
+}
+
+
+.left-side li {
+    display: inline-block;
+    list-style: none;
+
+}
+
+.left-side li a {
+    text-decoration: none;
+    display: flex;
+    font-size: 18px;
+    color: black;
+    padding: 5px 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.left-side li a {
+    position: relative;
+}
+
+.left-side ul li a {
+    color: black;
+    font-size: 17px;
+    padding: 7px 13px;
+    text-transform: uppercase;
+}
+
+/* HAMBURGER */
+nav #icon {
+    color: black;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1048px) {
+    .logo {
+        padding-left: 1px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    nav ul {
+        margin-right: 20px;
+    }
+
+    nav a {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    nav #icon {
+        display: block;
+    }
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(15px);
+        border-radius: 10px;
+        overflow: hidden;
+        z-index: 100;
+        top: 100px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav li {
+        padding: 0.8rem;
+        display: block;
+        margin: 1px 90px;
+        align-items: center;
+        justify-content: center;
+        line-height: 2.5rem;
+    }
+
+    nav li a:hover {
+        color: #fff;
+    }
+
+    nav a {
+        font-size: 20px;
+    }
+
+    nav ul.show {
+        left: 0;
+    }
+}
+
+/*HOVER*/
+
+.right-side::after {
+    display: none;
+}
+
+.left-side li a::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background: #B3CEE5;
+    transition: .3s;
+}
+
+.left-side li a:after {
+    left: 10%;
+    top: 45px;
+}
+
+.left-side li a:hover:after {
+    width: 80%;
+}
+
+.left-side li a:hover {
+    color: #548dc0;
+}
+
+/* SLIDER IMAGES */
+.slider-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 10 / 4;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.img-slider {
+    padding-top: 100px;
+}
+
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a {
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.50;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}
+
+/* ROWS */
+.row {
+    width: 58%;
+    margin: 60px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.column {
+    float: left;
+    width: 250px;
+    padding: 20px;
+    transition: 1s;
+    margin: 0 60px;
+    flex-basis: calc(33.33% - 10px);
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .column {
+        flex-basis: calc(50% - 10px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .column {
+        flex-basis: 100%;
+    }
+    .slider-wrapper {
+        width: 100%;
+    }
+    .slider-wrapper .slider img {
+        width: 300%;
+    }
+
+}
+
+.column img {
+    display: block;
+    border-radius: 5px;
+    border: 3px solid #F7CAC9;
+}
+
+.row::after {
+    content: "";
+    display: none;
+    clear: both;
+}
+
+.column:hover {
+    transform: scale(1.3);
+    z-index: 2;
+}
+
+.text {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}

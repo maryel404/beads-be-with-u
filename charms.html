@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Charms</title>
+        <link rel="icon" href="images/BU LOGO.png">
+        <link rel="stylesheet" href="styles/products.css">
+        <link rel="stylesheet" href="styles/navigation.css">
+        <link rel="stylesheet" href="styles/cart.css">
+        <link href= 'https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#icon').click(function(){
+                    $('ul').toggleClass('show');
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <!--Header-->
+        <div class="bg-gradient">
+        
+        <!--Cart-->
+        
+        <!--Shop product-->
+        <section class="shop-container">
+            <header class="header">
+                <nav>
+                    <div class="nav-container">
+
+                        <div class="logo">
+                            <a href="index.html"><img src="images/logo.png" class="center"></a>
+                        </div>                        
+
+                        <ul class="left-side">
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="about.html" >ABOUT</a></li>
+                            <li><a href="contact.html" >CONTACT</a></li>                                
+                            <li><input type="text" placeholder="Search Products" class="search-me" id="find" onkeyup="search()"></li>
+                            <li><a class="right-side cart-toggle" onclick="toggleCart()"><i class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                
+                        
+                        <label id="icon">
+                            <i class="fas fa-bars"></i>
+                        </label>
+                    </div>
+            </nav>
+            </header>
+
+            <div class="container">
+                <form action="index.html">
+                    <button>
+                        <span class="circle">
+                            <span class="icon arrow"></span>
+                        </span>
+                    </button>
+                </form>
+                <h2 class="section-title">Shop Products</h2>
+            </div>
+            
+            <div class="shop-content">
+                <!--product 1-->
+                    <div class="column">
+                        <img src="images/BLACKPINK JENNIE.jpg" class="img-front">
+                        <img src="images/jennie charm.jpg" class="img-back">
+                        <h2 class="product-title">BLACKPINK JENNIE Inspired Beaded Phone Charm</h2>
+                        <span class="price">₱75.00</span>
+                        <i class="bx bx-shopping-bag add-cart" id="cart-icon"></i>
+                    </div>
+                    <div class="column">
+                        <img src="images/BLACKPINK JISOO.jpg" class="img-front">
+                        <img src="images/jisoo charm.jpg" class="img-back">
+                        <h2 class="product-title">BLACKPINK JISOO Inspired Beaded Phone Charm</h2>
+                        <span class="price">₱75.00</span>
+                        <i class="bx bx-shopping-bag add-cart" id="cart-icon"></i>
+                    </div>
+                    <div class="column">
+                        <img src="images/BLACKPINK LISA.jpg" class="img-front">
+                        <img src="images/lisa charm.jpg" class="img-back">
+                        <h2 class="product-title">BLACKPINK LISA Inspired Beaded Phone Charm</h2>
+                        <span class="price">₱75.00</span>
+                        <i class="bx bx-shopping-bag add-cart" id="cart-icon"></i>
+                    </div>
+                    <div class="column">
+                        <img src="images/BLACKPINK ROSE.jpg" class="img-front">
+                        <img src="images/rose charm.jpg" class="img-back">
+                        <h2 class="product-title">BLACKPINK ROSE Inspired Beaded Phone Charm</h2>
+                        <span class="price">₱75.00</span>
+                        <i class="bx bx-shopping-bag add-cart" id="cart-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="overlay" id="cartyarn">
+            <div class="content">
+              <!-- your content here -->
+              <h2 class="cart-title">Your Cart</h2>
+                <!--Content-->
+                <div class="cart-content">
+                    <div class="cart-box">
+                       
+                        <div class="detail-box">
+                            <div class="cart-product-title"></div>
+                            <div class="cart-price"></div>
+                           
+                        </div>
+                        <!--Remove Cart-->
+                    
+                    </div>  
+                </div>
+                <!--Total-->
+                <div class="total">
+                    <div class="total-title"></div>
+                    <div class="total-price"></div>
+                </div>
+                <!--Buy and Cancel Button-->
+                <div class="cancelbtn"><button type="button" class="cancel-btn" onclick="window.location.href='charms.html'">Cancel</button></div>
+                <div class="buybtn"><button type="button" class="btn-buy">Check Out</button></div>
+            </div> 
+            </div>
+            
+        <!--Footer-->
+        <footer>
+            <div class="footerContainer">
+                <div class="socialIcons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+                <div class="footerNav">
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="order.html">ORDERING PROCESS</a></li>
+    
+                    </ul>
+                </div>
+            </div>
+            <div class="footerBottom">
+                <p>COPYRIGHT &copy; 2023 Designed by <span class="designer">Beads Be With U</span></p>
+            </div>
+            </footer>
+
+        <!--Link to JS-->
+        <script src="js/main.js"></script>
+    </body>
+</html>
